@@ -12,11 +12,11 @@ function Header() {
         <a href="/">
           <li className="border-white border-2 rounded-md px-2 hover:border-[#2b2b64]">Home</li>
         </a>
-        <a href="addBlog">
+        <a href="/addBlog">
 
           <li className="border-white border-2 rounded-md px-2 hover:border-[#2b2b64]">Add Blog</li>
         </a>
-        <a href="contact">
+        <a href="/contact">
           <li className="border-white border-2 rounded-md px-2 hover:border-[#2b2b64]">Contact</li>
         </a>
         <li className="border-white border-2 rounded-md px-2 hover:border-[#2b2b64]">About</li>
