@@ -18,7 +18,7 @@ function App() {
     setEmail("");
     setMessage("");
 
-    fetch("http://localhost:4000/sendData", {
+    fetch("https://blog-backend-klhp.onrender.com/sendData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function App() {
 
     //To getData from server :)
 
-    //   fetch('http://localhost:4000/')
+    //   fetch('https://blog-backend-klhp.onrender.com/')
     //   .then((response)=>response.json())
     //   .then((result)=>{
     //     console.log(result)

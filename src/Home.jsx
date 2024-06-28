@@ -6,7 +6,7 @@ function Home() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/getBlogs", {
+    fetch("https://blog-backend-klhp.onrender.com/getBlogs", {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -21,7 +21,7 @@ function Home() {
     console.log(blogs);
   function handleSearch(e) {
     e.preventDefault();
-    fetch("http://localhost:4000/search?q=" + search, {
+    fetch("https://blog-backend-klhp.onrender.com/search?q=" + search, {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -62,7 +62,7 @@ function Home() {
               return (
                 <div className=" flex flex-col  items-center border-2 border-black m-2 p-2 w-72 h-[auto] ">
 
-                  <img src={`http://localhost:4000/${blog.image}`} className="h-56"></img>
+                  <img src={`https://blog-backend-klhp.onrender.com/${blog.image}`} className="h-56"></img>
 
                   <h3 className="text-[22px] font-semibold font-serif">{blog.name}</h3>
                   <p className="text-[#6f6e6e]">{blog.title}</p>

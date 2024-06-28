@@ -20,7 +20,7 @@ formData.append("image",image)
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("http://localhost:4000/sendBlog", {
+    fetch("https://blog-backend-klhp.onrender.com/sendBlog", {
         method:'POST',
            body: formData,
     }).then((response)=>response.json())
