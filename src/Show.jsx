@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import { faSackDollar } from "@fortawesome/free-solid-svg-icons";
-
 function Show() {
   const [data, setData] = useState([]);
   const [name, setName] = useState("");
